@@ -1,0 +1,86 @@
+/* styles.css */
+
+/* Body background color */
+body {
+    background-color: #1e1e1e; /* Dark blue background like VS Code */
+    color: #fff; /* Text color */
+    min-height: 100vh; /* Ensure the body covers the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Arrange child elements in a column */
+}
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* to make it circular */
+    object-fit: cover; /* to ensure the entire image is visible */
+}
+
+/* Header background color */
+.navbar {
+    background-color: #007acc; /* Light blue for header */
+}
+
+/* Footer background color */
+.footer {
+    background-color: #007acc; /* Light blue for footer */
+    color: #fff; /* Text color */
+    text-align: center; /* Center text */
+    padding: 20px 0; /* Add padding */
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Navbar link color */
+.navbar-nav .nav-link {
+    color: #fff; /* White text color for navbar links */
+}
+
+/* Navbar link hover color */
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Light gray hover color */
+}
+
+/* Container background color */
+.container {
+    background-color: #343a40; /* Dark gray background color for content area */
+    padding: 20px; /* Add padding */
+    border-radius: 8px; /* Add border radius */
+    margin-top: 20px; /* Add margin from top */
+}
+
+/* Button styling */
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #007acc;
+    color: #fff;
+    border: 1px solid #007acc;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border: 1px solid #0056b3;
+}
+
+/* Custom file input */
+.custom-file-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Video player styles */
+#videoPlayer {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}

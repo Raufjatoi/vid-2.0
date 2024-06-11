@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}About - Vid Player{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>About Me</h1>
+            <img src="{{ url_for('static', filename='images/profile.PNG') }}" alt="My Profile Picture" class="img-fluid rounded mb-3 profile-pic">
+            <p>This project is my final project for CS50. It's a multimedia application that allows users to watch YouTube videos, search for videos, and more. I plan to add more features and enhancements in the future.</p>
+            <h2>Links</h2>
+            <p>
+                <a href="#" class="btn btn-primary mr-2">My GitHub</a>
+                <a href="#" class="btn btn-primary mr-2">LinkedIn</a>
+                <!-- Add more links/buttons as needed -->
+            </p>
+        </div>
+        <div class="col-md-6">
+            <h2>CS50 Final Project</h2>
+            <p>This project was created as the final project for CS50, a Harvard University course on edX. It's built using Python, Flask, and various APIs including the YouTube Data API.</p>
+            <h2>Project Features</h2>
+            <ul>
+                <li>Watch YouTube videos</li>
+                <li>Search for videos</li>
+                <li>Generate recommended videos</li>
+                <!-- Add more features as needed -->
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

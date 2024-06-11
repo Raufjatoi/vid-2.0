@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}Video Player - Vid Player{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Video Player</h1>
+            {% if video_url %}
+                <video id="videoPlayer" controls>
+                    <source src="{{ video_url }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            {% else %}
+                <p>No video selected.</p>
+            {% endif %}
+            <div class="mt-3">
+                <!-- Add buttons here -->
+                <button class="btn btn-primary mr-2">Try Convert Video</button>
+                <button class="btn btn-primary mr-2">Try Music</button>
+                <button class="btn btn-primary">Try Offline Player</button>
+                <!-- Add more buttons here -->
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h1>Recommended Videos</h1>
+            <div class="row">
+                {% for video in recommended_videos %}
+                <div class="col-md-12 mb-3">
+                    <div class="card">
+                        <img src="{{ video.snippet.thumbnails.medium.url }}" class="card-img-top" alt="{{ video.snippet.title }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ video.snippet.title }}</h5>
+                            <form action="/play" method="post">
+                                <input type="hidden" name="youtube_url" value="https://www.youtube.com/watch?v={{ video.id }}">
+                                <button type="submit" class="btn btn-primary btn-block">Play</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
