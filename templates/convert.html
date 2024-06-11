@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}Convert Video - Vid Player{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>Convert Video to Audio</h1>
+    <form id="convertForm" action="/convert-video" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="video">Upload Video</label>
+            <input type="file" class="form-control-file" id="video" name="video">
+        </div>
+        <button type="submit" class="btn btn-primary">Convert to MP3</button>
+    </form>
+</div>
+<script>
+document.getElementById('convertForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+    
+    fetch('/convert-video', {
+        method: 'POST',
+        body: formData,
+    }).then(response => {
+        return response.blob();
+    }).then(blob => {
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = url;
+        a.download = formData.get('video').name.replace(/\.[^/.]+$/, "") + ".mp3";
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+        alert('Your file has been converted and downloaded!');
+    }).catch(error => {
+        console.error('Error:', error);
+    });
+});
+</script>
+{% endblock %}
