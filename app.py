@@ -70,13 +70,13 @@ def generate_more():
 def search_videos():
     search_query = request.form['search_query']
     youtube = build('youtube', 'v3', developerKey=API_KEY)
-    request = youtube.search().list(
+    youtube_request = youtube.search().list(
         q=search_query,
         part='snippet',
         type='video',
         maxResults=6
     )
-    response = request.execute()
+    response = youtube_request.execute()
     videos = response['items']
     return render_template('index.html', videos=videos)
 
