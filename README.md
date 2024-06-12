@@ -1,5 +1,6 @@
 # Vid
-#### Video Demo: (here)[https://youtu.be/Wq98gTESwzk?si=bOMQeNcpnc5yvLbm]
+  ## vid demo  
+[![Watch the video](https://github.com/Raufjatoi/vid-2.0/blob/main/Screenshot%202024-06-11%20201029.png)](https://youtu.be/Wq98gTESwzk?si=lDx9QYEemSTUglmL)  click it 🙂          
 
 ## Description:
 Vid is a fully dynamic, web-based video player integrated with the YouTube Data API. This project aims to provide a seamless and enriched video experience, featuring additional functionalities such as video editing and converting. Built using Flask, Vid is designed to offer an intuitive and user-friendly interface, ensuring ease of use while delivering powerful features for video enthusiasts.
@@ -53,3 +54,8 @@ Vid is a fully dynamic, web-based video player integrated with the YouTube Data 
 Vid is a robust and versatile web application designed to cater to all your video needs. Whether you want to watch, edit, or convert videos, Vid provides a comprehensive suite of tools to enhance your video experience. With continuous improvements and new features on the horizon, Vid aims to become an indispensable tool for video enthusiasts and professionals alike.
 
 Feel free to explore the application and provide feedback for future enhancements. Thank you for using Vid!
+
+  ## Certificate
+[![Certificate ](https://github.com/Raufjatoi/vid-2.0/blob/main/CS50x.png)]    
+
+
