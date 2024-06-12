@@ -1,5 +1,5 @@
 # Vid
-#### Video Demo: [tommorow soon ]
+#### Video Demo: (here)[https://youtu.be/Wq98gTESwzk?si=bOMQeNcpnc5yvLbm]
 
 ## Description:
 Vid is a fully dynamic, web-based video player integrated with the YouTube Data API. This project aims to provide a seamless and enriched video experience, featuring additional functionalities such as video editing and converting. Built using Flask, Vid is designed to offer an intuitive and user-friendly interface, ensuring ease of use while delivering powerful features for video enthusiasts.
@@ -21,7 +21,7 @@ Vid is a fully dynamic, web-based video player integrated with the YouTube Data 
 1. **Home**:
    - The homepage offers a brief introduction to Vid and its features.
    - Users can navigate to different sections from the home page.
-  
+
 2. **Video Player**:
    - Integrated with the YouTube Data API, this feature allows users to search for and watch YouTube videos directly within the application.
    - Provides controls for play, pause, volume, and fullscreen viewing.
