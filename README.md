@@ -56,6 +56,6 @@ Vid is a robust and versatile web application designed to cater to all your vide
 Feel free to explore the application and provide feedback for future enhancements. Thank you for using Vid!
 
   ## Certificate
-[![Certificate ](https://github.com/Raufjatoi/vid-2.0/blob/main/CS50x.png)]    
+[Certificate ](https://github.com/Raufjatoi/vid-2.0/blob/main/CS50x.png) 
 
 
